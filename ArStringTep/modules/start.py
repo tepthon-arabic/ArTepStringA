@@ -9,7 +9,7 @@ from ArStringTep.utils import add_served_user, keyboard
 async def f_start(_, message: Message):
     await message.reply_text(
         text=f"✦ **مرحبًــا  👋** {message.from_user.first_name},\n\nهذا هو  {Anony.mention},\n✦ يمكنـك استخـدامي لـ استخـراج كـود الجلسـة لـ تنصيـب  تيبثـون اضغط بدء استخراج الجلسة وابدأ بالاستخراج ✨",
-        reply_markup=keyboard
+        reply_markup=keyboard,
         disable_web_page_preview=True,
     )
     await add_served_user(message.from_user.id)
